@@ -26,8 +26,11 @@ form{
             width: 40vw;
         }
     }
-}
-
-.submit-btn{
-    text-align: center;
+    .contact-btn{
+        text-align: center;
+        .submit-btn{
+            font-family: 'Noto Serif Lao', serif;
+            font-size: 1.6rem;
+        }
+    }
 }

@@ -119,7 +119,10 @@ form .contact-items .label {
 form .contact-items .inputs {
   width: 40vw;
 }
-
-.submit-btn {
+form .contact-btn {
   text-align: center;
+}
+form .contact-btn .submit-btn {
+  font-family: "Noto Serif Lao", serif;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
