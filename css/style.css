@@ -113,14 +113,13 @@ form .contact-items {
   margin: 0 auto 2rem;
 }
 form .contact-items .label {
-  display: inline-block;
   font-family: "Noto Serif Lao", serif;
   font-size: 1.6rem;
-  margin-right: 2rem;
-  text-align: justify;
-  -moz-text-align-last: justify;
-       text-align-last: justify;
 }
 form .contact-items .inputs {
   width: 40vw;
+}
+
+.submit-btn {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
