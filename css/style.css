@@ -118,6 +118,26 @@ input, select {
   font-family: "Noto Serif Lao", serif;
 }
 
+.careers-container {
+  display: flex;
+}
+.careers-container .careers-items {
+  width: 100%;
+}
+.careers-container .careers-items h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 1rem;
+}
+.careers-container .careers-items p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: "Noto Serif Lao", serif;
+}
+
 .contact-title {
   font-family: "Bebas Neue", cursive;
   font-size: 2.4rem;
