@@ -102,6 +102,22 @@ input, select {
   margin-bottom: 2rem;
 }
 
+.explanation {
+  width: 50vw;
+  margin: 0 auto 2rem;
+  font-size: 1.6rem;
+  font-family: "Noto Serif Lao", serif;
+}
+
+.career-btn {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.career-btn .career-submit {
+  font-size: 1.6rem;
+  font-family: "Noto Serif Lao", serif;
+}
+
 .contact-title {
   font-family: "Bebas Neue", cursive;
   font-size: 2.4rem;
