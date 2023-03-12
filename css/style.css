@@ -100,4 +100,27 @@ input, select {
   font-size: 2.4rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+form {
+  width: 80vw;
+  margin: 0 auto;
+}
+form .contact-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin: 0 auto 2rem;
+}
+form .contact-items .label {
+  display: inline-block;
+  font-family: "Noto Serif Lao", serif;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+form .contact-items .inputs {
+  width: 40vw;
 }/*# sourceMappingURL=style.css.map */

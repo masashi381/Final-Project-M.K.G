@@ -9,3 +9,25 @@
     text-align: center;
     margin-bottom: 2rem;
 }
+
+form{
+    width: 80vw;
+    margin: 0 auto;
+    .contact-items{
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+        margin: 0 auto 2rem;
+        .label{
+            display: inline-block;
+            font-family: 'Noto Serif Lao', serif;
+            font-size: 1.6rem;
+            margin-right: 2rem;
+            text-align: justify;
+            text-align-last: justify;
+        }
+        .inputs{
+            width: 40vw;
+        }
+    }
+}
