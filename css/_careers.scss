@@ -37,6 +37,9 @@ body{
         border: none;
         padding: 1rem 1rem;
         border-radius: 5px;
+        &:hover{
+            opacity: .8;
+        }
     }
 }
 

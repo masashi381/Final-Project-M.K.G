@@ -213,6 +213,9 @@ body {
   padding: 1rem 1rem;
   border-radius: 5px;
 }
+.career-btn .career-submit:hover {
+  opacity: 0.8;
+}
 
 .careers-container {
   display: flex;
