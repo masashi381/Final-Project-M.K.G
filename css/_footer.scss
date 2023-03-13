@@ -1,1 +1,22 @@
 // for Kevin
+body{
+    background-color: #EDF2F4;
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42; 
+}
+footer{
+    address{
+        background-color: #8D99AE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .footer-address-icon{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+    p{
+        font-family: sans-serif;
+    }
+}
