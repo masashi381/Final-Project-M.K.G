@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Lao&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <h2 class="contact-title">Contact form</h2>
+        <form action="">
+            <div class="contact-items">
+                <label class="label" for="name">name</label>
+                <input class="inputs" id="name" type="text" name="yourname" placeholder="Type your name">
+            </div>
+            <div class="contact-items">
+                <label class="label" for="email">Email</label>
+                <input class="inputs" id="email" type="email" name="mail" placeholder="Type your email address">
+            </div>
+            <div class="contact-items">
+                <label class="label" for="subject">subject</label>
+                <input class="inputs" id="subject" type="text" name="subject">
+            </div>
+            <div class="contact-items">
+                <label class="label" for="comment">comment</label>
+                <textarea class="inputs" name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contact-btn">
+                <button class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
