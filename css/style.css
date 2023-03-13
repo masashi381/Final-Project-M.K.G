@@ -151,6 +151,7 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: 2.4rem;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -182,6 +183,16 @@ body {
 }
 .careers-container .careers-items {
   width: 100%;
+}
+.careers-container .careers-items img {
+  display: block;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
 }
 .careers-container .careers-items h3 {
   text-align: center;
