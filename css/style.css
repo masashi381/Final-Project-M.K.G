@@ -148,6 +148,7 @@ input, select {
   font-size: 2.4rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: #2B2D42;
 }
 
 form {
@@ -163,6 +164,7 @@ form .contact-items {
 form .contact-items .label {
   font-family: "Noto Serif Lao", serif;
   font-size: 1.6rem;
+  color: #2B2D42;
 }
 form .contact-items .inputs {
   width: 40vw;
@@ -173,4 +175,5 @@ form .contact-btn {
 form .contact-btn .submit-btn {
   font-family: "Noto Serif Lao", serif;
   font-size: 1.6rem;
+  color: #2B2D42;
 }/*# sourceMappingURL=style.css.map */
