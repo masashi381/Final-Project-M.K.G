@@ -7,12 +7,34 @@ body{
 header{
     background-color: #8D99AE;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2rem;
+    font-size: 20rem;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    &:hover{
-        color: #EDF2F4;
+    img{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 5rem;
+        height: 13rem;
+        width: 26rem;
+    }
+    nav{
+        padding-right: 1rem;
+        .nav-menu{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            padding: 2rem;
+            &:hover{
+                color: #EDF2F4;
+            }
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
     }
 }
