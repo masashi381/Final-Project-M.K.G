@@ -195,8 +195,7 @@ body {
   margin: 0 auto;
   text-align: justify;
   font-size: 1.2rem;
-  font-family: "Noto Serif Lao", serif;
-  color: #2B2D42;
+  line-height: 1.2;
 }
 
 body {
