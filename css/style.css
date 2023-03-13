@@ -157,7 +157,10 @@ body {
 .explanation {
   width: 50vw;
   margin: 0 auto 2rem;
+}
+.explanation p {
   font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .career-btn {
