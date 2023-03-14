@@ -9,7 +9,8 @@ body{
 }
 .contact-title{
     font-family: 'Bebas Neue', cursive;
-    font-size: 2.4rem;
+    font-size: 6rem;
+    margin-top: 5rem;
     text-align: center;
     margin-bottom: 2rem;
     color: #2B2D42;
@@ -17,7 +18,7 @@ body{
 
 form{
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     .contact-items{
         display: flex;
         justify-content: space-between;
@@ -30,6 +31,7 @@ form{
         }
         .inputs{
             width: 40vw;
+            height: 5vh;
         }
     }
     .contact-btn{
