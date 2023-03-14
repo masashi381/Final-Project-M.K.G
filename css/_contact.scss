@@ -53,6 +53,9 @@ form{
             border: none;
             padding: 1rem;
             border-radius: 5px;
+            &:hover{
+                opacity: .8;
+            }
         }
     }
 }

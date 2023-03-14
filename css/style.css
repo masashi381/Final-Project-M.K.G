@@ -355,4 +355,7 @@ form .contact-btn .submit-btn {
   border: none;
   padding: 1rem;
   border-radius: 5px;
+}
+form .contact-btn .submit-btn:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
