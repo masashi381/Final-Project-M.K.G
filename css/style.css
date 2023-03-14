@@ -333,6 +333,12 @@ form .contact-items .inputs {
   width: 40vw;
   height: 5vh;
 }
+form .contact-items .inputs::-moz-placeholder {
+  font-size: 1.4rem;
+}
+form .contact-items .inputs::placeholder {
+  font-size: 1.4rem;
+}
 form .contact-btn {
   text-align: center;
 }

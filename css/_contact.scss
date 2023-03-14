@@ -32,6 +32,9 @@ form{
         .inputs{
             width: 40vw;
             height: 5vh;
+            &::placeholder{
+                font-size: 1.4rem;
+            }
         }
     }
     .contact-btn{
