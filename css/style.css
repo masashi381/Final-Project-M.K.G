@@ -343,7 +343,12 @@ form .contact-btn {
   text-align: center;
 }
 form .contact-btn .submit-btn {
+  width: 10vw;
+  font-size: 2.4rem;
   font-family: "Noto Serif Lao", serif;
-  font-size: 1.6rem;
   color: #2B2D42;
+  background-color: #8D99AE;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
