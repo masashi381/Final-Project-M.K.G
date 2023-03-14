@@ -225,6 +225,57 @@ body {
   font-family: "Noto Serif Lao", sans-serif;
   color: #2B2D42;
 }
+body main section {
+  display: flex;
+  flex-direction: column;
+}
+body main section .location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+body main section .location .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main section .location .address .store {
+  display: flex;
+  flex-direction: row;
+}
+body main section .location img {
+  height: 5rem;
+  width: 5rem;
+}
+body main section .location h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5.5rem;
+  padding-left: 1.5rem;
+}
+body main section .location p {
+  text-align: end;
+  font-size: 3rem;
+}
+body main section .location .google-map {
+  height: 30rem;
+  width: 40rem;
+}
+body main section #line {
+  display: flex;
+  justify-content: center;
+}
+body main section #line hr {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-top: 0.3rem solid #2B2D42;
+}
 
 body {
   background-color: #EDF2F4;
