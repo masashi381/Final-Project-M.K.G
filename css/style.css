@@ -339,6 +339,9 @@ form .contact-items .inputs::-moz-placeholder {
 form .contact-items .inputs::placeholder {
   font-size: 1.4rem;
 }
+form .contact-items .contact-comment {
+  width: 40vw;
+}
 form .contact-btn {
   text-align: center;
 }
