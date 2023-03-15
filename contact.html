@@ -27,25 +27,25 @@
     </header>
     <main>
         <h2 class="contact-title">Contact form</h2>
-        <form action="">
+        <form action="" name="contactName">
             <div class="contact-items">
                 <label class="label" for="name">name</label>
                 <input class="inputs" id="name" type="text" name="yourname" placeholder="Type your name" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="email">Email</label>
-                <input class="inputs" id="email" type="email" name="mail" placeholder="Type your email address" pattern=".+@gmail.com" required>
+                <input class="inputs" id="email" type="email" name="yourmail" placeholder="Type your email address" pattern=".+@gmail.com" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="subject">subject</label>
-                <input class="inputs" id="subject" type="text" name="subject">
+                <input class="inputs" id="subject" type="text" name="subject" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="comment">comment</label>
-                <textarea class="contact-comment" name="comment" id="comment" cols="30" rows="10"></textarea>
+                <textarea class="contact-comment" name="comment" id="comment" cols="30" rows="10" required></textarea>
             </div>
             <div class="contact-btn">
-                <button class="submit-btn">Submit</button>
+                <button id="formBtn" class="submit-btn">Submit</button>
             </div>
         </form>
     </main>
@@ -68,6 +68,6 @@
         </address>
         <p>© 2023   |   RedBeef Noodle Kitchen</p>
     </footer>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
