@@ -3,3 +3,72 @@
 
 // write code below this line
 // for Kevin
+
+body{
+    background-color: #EDF2F4;
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42;
+    main{
+        padding: 5rem 0;
+        #menu-section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            #famous-items{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .famous-menu-items{
+                    border: 0.5rem solid #2B2D42;
+                    padding: 3rem;
+                    margin: 1.5rem;
+                    &:hover{
+                        background-color: #8D99AE;
+                        color: #EDF2F4;
+                    }
+                    h3{
+                        font-family: "Bebas Neue", sans-serif;
+                        font-size: 4rem;
+                    }
+                    p{
+                        font-size: 3rem;
+                        margin: 1rem;
+                    }
+                    img{
+                        height: 30rem;
+                        width: 45rem;
+                    }
+                }
+            }
+            #items{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .menu-items{
+                    border: 0.5rem solid #2B2D42;
+                    padding: 3rem;
+                    margin: 1.5rem;
+                    &:hover{
+                        background-color: #8D99AE;
+                        color: #EDF2F4;
+                    }
+                    h3{
+                        font-family: "Bebas Neue", sans-serif;
+                        font-size: 2.6rem;
+                    }
+                    p{
+                        font-size: 2.2rem;
+                        margin: 1rem;
+                    }
+                    img{
+                        height: 25rem;
+                        width: 37.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
