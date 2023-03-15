@@ -30,11 +30,11 @@
         <form action="">
             <div class="contact-items">
                 <label class="label" for="name">name</label>
-                <input class="inputs" id="name" type="text" name="yourname" placeholder="Type your name">
+                <input class="inputs" id="name" type="text" name="yourname" placeholder="Type your name" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="email">Email</label>
-                <input class="inputs" id="email" type="email" name="mail" placeholder="Type your email address">
+                <input class="inputs" id="email" type="email" name="mail" placeholder="Type your email address" pattern=".+@gmail.com" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="subject">subject</label>
@@ -68,5 +68,6 @@
         </address>
         <p>© 2023   |   RedBeef Noodle Kitchen</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
