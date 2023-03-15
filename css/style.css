@@ -171,6 +171,56 @@ footer p {
   padding-bottom: 3rem;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
+#Home {
+  min-height: 100vh;
+  background: url(../images/Premium\ Red\ Beef\ Noodle\ Soup.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 6rem;
+  text-shadow: 0 0 1px white;
+  color: black;
+}
+
+.Menu-button {
+  font-family: "Noto Serif Lao", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.Menu-button {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  min-height: 6rem;
+  min-width: 5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  animation-duration: 3s;
+}
+
+.Menu-button:hover {
+  box-shadow: 0 0 10px white;
+  animation-duration: 3s;
+  transition-duration: 1s;
+}
+
+#About {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
@@ -377,7 +427,8 @@ body {
 
 .contact-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 2.4rem;
+  font-size: 6rem;
+  margin-top: 5rem;
   text-align: center;
   margin-bottom: 2rem;
   color: #2B2D42;
@@ -385,11 +436,12 @@ body {
 
 form {
   width: 80vw;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
 }
 form .contact-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 50vw;
   margin: 0 auto 2rem;
 }
@@ -400,12 +452,30 @@ form .contact-items .label {
 }
 form .contact-items .inputs {
   width: 40vw;
+  height: 5vh;
+}
+form .contact-items .inputs::-moz-placeholder {
+  font-size: 1.4rem;
+}
+form .contact-items .inputs::placeholder {
+  font-size: 1.4rem;
+}
+form .contact-items .contact-comment {
+  width: 40vw;
 }
 form .contact-btn {
   text-align: center;
 }
 form .contact-btn .submit-btn {
+  width: 10vw;
+  font-size: 2.4rem;
   font-family: "Noto Serif Lao", serif;
-  font-size: 1.6rem;
   color: #2B2D42;
+  background-color: #8D99AE;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+form .contact-btn .submit-btn:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
