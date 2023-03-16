@@ -126,7 +126,7 @@ header nav .nav-menu {
   flex-direction: row;
 }
 header nav li {
-  font-size: 7rem;
+  font-size: 6rem;
   padding: 2rem;
 }
 header nav li:hover {
@@ -187,7 +187,7 @@ footer p {
 
 .home-title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 6rem;
+  font-size: 10rem;
   text-shadow: 0 0 1px white;
   color: black;
 }
@@ -203,7 +203,8 @@ footer p {
   background-color: black;
   border-radius: 10px;
   min-height: 6rem;
-  min-width: 5rem;
+  width: 20rem;
+  border: transparent;
   padding: 1rem;
   margin-top: 1rem;
   animation-duration: 3s;
@@ -216,7 +217,8 @@ footer p {
 }
 
 #About {
-  min-height: 100vh;
+  padding-bottom: 7rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -227,7 +229,7 @@ footer p {
   width: 33%;
   padding-top: 6rem;
 }
-.about-divs img {
+.about-divs .about-img {
   width: 32rem;
   height: 24rem;
   margin-top: 6rem;
@@ -236,14 +238,15 @@ footer p {
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
 }
-.about-divs p {
-  margin-top: 4rem;
+.about-divs .about-p {
+  margin-top: 3rem;
   text-align: left;
   font-size: 2rem;
   font-weight: 700;
-  padding-left: 2rem;
+  width: 32rem;
+  margin-left: 8rem;
 }
-.about-divs img:hover {
+.about-divs .about-img:hover {
   box-shadow: 0 0 1rem black;
 }
 
@@ -254,16 +257,15 @@ footer p {
   #about {
     max-width: 375px;
   }
-  img {
+  .about-img {
     max-width: 12rem;
     max-height: 9rem;
   }
-  p {
+  .about-p {
     margin-top: 4rem;
     text-align: left;
     font-size: 2rem;
     font-weight: 700;
-    padding: 1rem;
   }
 }
 body {
