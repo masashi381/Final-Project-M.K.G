@@ -431,7 +431,7 @@ body {
 
 .careers-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 2.4rem;
+  font-size: 4rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -442,16 +442,23 @@ body {
   margin: 0 auto 2rem;
 }
 .explanation p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 1.2;
   margin-bottom: 2rem;
 }
 
-.career-btn {
+#careers-resume #resume {
+  display: block;
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+#careers-resume .career-btn {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
-.career-btn .career-submit {
+#careers-resume .career-btn .career-submit {
   font-size: 1.6rem;
   font-family: "Noto Serif Lao", serif;
   color: #2B2D42;
@@ -460,7 +467,7 @@ body {
   padding: 1rem 1rem;
   border-radius: 5px;
 }
-.career-btn .career-submit:hover {
+#careers-resume .career-btn .career-submit:hover {
   opacity: 0.8;
 }
 
@@ -468,7 +475,8 @@ body {
   display: flex;
 }
 .careers-container .careers-items {
-  width: 100%;
+  width: 100vw;
+  margin-bottom: 5rem;
 }
 .careers-container .careers-items img {
   display: block;
@@ -482,7 +490,7 @@ body {
 }
 .careers-container .careers-items h3 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 4rem;
   font-family: "Bebas Neue", cursive;
   margin-bottom: 1rem;
   color: #2B2D42;
@@ -491,7 +499,7 @@ body {
   width: 80%;
   margin: 0 auto;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
