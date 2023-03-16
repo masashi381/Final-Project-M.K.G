@@ -59,3 +59,32 @@ form{
         }
     }
 }
+
+@media only screen and (max-width: 375px){
+    .contact-title{
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+    form{
+        margin: 0 auto 3rem;
+        .contact-items{
+            flex-direction: column;
+            align-items: start;
+            .label{
+                margin-bottom: 0.5rem;
+            }
+            .inputs{
+                width: 50vw;
+            }
+            .contact-comment{
+                width: 50vw;
+            }
+        }
+        .contact-btn{
+            .submit-btn{
+                width: 30vw;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
