@@ -106,7 +106,6 @@ header {
   font-family: "Bebas Neue", sans-serif;
   height: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -117,6 +116,9 @@ header img {
   padding-bottom: 2rem;
   height: 13rem;
   width: 26rem;
+}
+header .material-symbols-outlined {
+  display: none;
 }
 header nav {
   padding-right: 1rem;
@@ -137,6 +139,48 @@ header nav a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 375px) {
+  header {
+    position: relative;
+    height: 90px;
+    z-index: 1;
+  }
+  header img {
+    width: 10rem;
+    height: 5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .menu-container {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    cursor: pointer;
+  }
+  header .menu-container .material-symbols-outlined {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+  header .menu-container .open {
+    opacity: 1;
+  }
+  header .menu-container .open.active {
+    opacity: 0;
+  }
+  header .menu-container .close {
+    opacity: 0;
+  }
+  header .menu-container .close.active {
+    opacity: 1;
+  }
+  header nav {
+    display: none;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
@@ -431,6 +475,10 @@ body {
   color: #2B2D42;
 }
 
+.navigation-responsive {
+  display: none;
+}
+
 .careers-title {
   font-family: "Bebas Neue", cursive;
   font-size: 4rem;
@@ -506,6 +554,40 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
+  .navigation-responsive {
+    display: block;
+    background-color: #EDF2F4;
+    position: absolute;
+    top: 0;
+    left: -375px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .navigation-responsive .nav-menu-responsive {
+    padding-inline: 0;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
+    opacity: 0.5;
+  }
+  .navigation-responsive.active {
+    left: 0;
+  }
   .careers-title {
     font-size: 3.6rem;
   }
