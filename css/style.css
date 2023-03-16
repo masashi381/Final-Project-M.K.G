@@ -379,6 +379,7 @@ body main #location-section .location .address {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5rem;
 }
 body main #location-section .location .address .store {
   display: flex;
@@ -414,6 +415,14 @@ body main #location-section #line hr {
   border-top: 0.3rem solid #2B2D42;
 }
 
+@media only screen and (max-width: 375px) {
+  body main .location {
+    flex-wrap: wrap;
+  }
+  body main .location p {
+    padding-bottom: 5rem;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
@@ -571,4 +580,31 @@ form .contact-btn .submit-btn {
 }
 form .contact-btn .submit-btn:hover {
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-title {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+  form {
+    margin: 0 auto 3rem;
+  }
+  form .contact-items {
+    flex-direction: column;
+    align-items: start;
+  }
+  form .contact-items .label {
+    margin-bottom: 0.5rem;
+  }
+  form .contact-items .inputs {
+    width: 50vw;
+  }
+  form .contact-items .contact-comment {
+    width: 50vw;
+  }
+  form .contact-btn .submit-btn {
+    width: 30vw;
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
