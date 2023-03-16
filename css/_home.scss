@@ -49,4 +49,48 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-divs{
+    text-align: center;
+    width: 33%;
+    padding-top: 6rem;
+    img{
+        width: 32rem;
+        height: 24rem;
+        margin-top: 6rem;
+    } h2{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 4rem;
+        } p{
+            margin-top: 4rem;
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 700;
+            padding-left: 2rem;
+        } img:hover{
+            box-shadow:0 0 1rem black;
+        }
+}
+
+@media only screen and (max-width: 376px){
+    #Home{
+        max-width: 375px;
+    }
+
+    #about{
+        max-width: 375px;
+    }
+    img{
+        max-width: 12rem;
+        max-height: 9rem;
+    }p{
+        margin-top: 4rem;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+    } 
+
 }

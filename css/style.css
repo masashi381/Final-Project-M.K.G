@@ -219,8 +219,53 @@ footer p {
   min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
+.about-divs {
+  text-align: center;
+  width: 33%;
+  padding-top: 6rem;
+}
+.about-divs img {
+  width: 32rem;
+  height: 24rem;
+  margin-top: 6rem;
+}
+.about-divs h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+}
+.about-divs p {
+  margin-top: 4rem;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 2rem;
+}
+.about-divs img:hover {
+  box-shadow: 0 0 1rem black;
+}
+
+@media only screen and (max-width: 376px) {
+  #Home {
+    max-width: 375px;
+  }
+  #about {
+    max-width: 375px;
+  }
+  img {
+    max-width: 12rem;
+    max-height: 9rem;
+  }
+  p {
+    margin-top: 4rem;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
@@ -428,6 +473,32 @@ body {
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 375px) {
+  .careers-title {
+    font-size: 3.6rem;
+  }
+  .explanation {
+    width: 90vw;
+    text-align: justify;
+  }
+  .career-btn {
+    margin-bottom: 5rem;
+  }
+  .careers-container {
+    flex-direction: column;
+  }
+  .careers-container .careers-items img {
+    margin-bottom: 5rem;
+  }
+  .careers-container .careers-items h3 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+  .careers-container .careers-items p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
@@ -487,4 +558,31 @@ form .contact-btn .submit-btn {
 }
 form .contact-btn .submit-btn:hover {
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-title {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+  form {
+    margin: 0 auto 3rem;
+  }
+  form .contact-items {
+    flex-direction: column;
+    align-items: start;
+  }
+  form .contact-items .label {
+    margin-bottom: 0.5rem;
+  }
+  form .contact-items .inputs {
+    width: 50vw;
+  }
+  form .contact-items .contact-comment {
+    width: 50vw;
+  }
+  form .contact-btn .submit-btn {
+    width: 30vw;
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
