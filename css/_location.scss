@@ -24,6 +24,7 @@ body{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    padding: 5rem;
                     .store{
                         display: flex;
                         flex-direction: row;
@@ -58,6 +59,19 @@ body{
                 text-align: center;
                 border: none;
                 border-top: 0.3rem solid #2B2D42;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        main{
+            .location{
+                flex-wrap: wrap;
+                p{
+                    padding-bottom: 5rem;
                 }
             }
         }

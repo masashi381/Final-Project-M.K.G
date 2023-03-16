@@ -357,6 +357,7 @@ body main #location-section .location .address {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5rem;
 }
 body main #location-section .location .address .store {
   display: flex;
@@ -392,6 +393,14 @@ body main #location-section #line hr {
   border-top: 0.3rem solid #2B2D42;
 }
 
+@media only screen and (max-width: 375px) {
+  body main .location {
+    flex-wrap: wrap;
+  }
+  body main .location p {
+    padding-bottom: 5rem;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
