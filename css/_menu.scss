@@ -72,3 +72,40 @@ body{
         }
     }
 }
+
+@media only screen and (max-width: 375px){
+    body{
+        main{
+            #menu-section{
+                #famous-items{
+                    .famous-menu-items{
+                        h3{
+                            font-size: 4rem;
+                        }
+                        p{
+                            font-size: 3rem;
+                        }
+                        .famous-menu-img{
+                            height: 20rem;
+                            width: 30rem;
+                        }
+                    }
+                }
+                #items{
+                    .menu-items{
+                        h3{
+                            font-size: 4rem;
+                        }
+                        p{
+                            font-size: 3rem;
+                        }
+                        .menu-img{
+                            height: 20rem;
+                            width: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -335,6 +335,28 @@ body main #menu-section #items .menu-items img {
   width: 37.5rem;
 }
 
+@media only screen and (max-width: 375px) {
+  body main #menu-section #famous-items .famous-menu-items h3 {
+    font-size: 4rem;
+  }
+  body main #menu-section #famous-items .famous-menu-items p {
+    font-size: 3rem;
+  }
+  body main #menu-section #famous-items .famous-menu-items .famous-menu-img {
+    height: 20rem;
+    width: 30rem;
+  }
+  body main #menu-section #items .menu-items h3 {
+    font-size: 4rem;
+  }
+  body main #menu-section #items .menu-items p {
+    font-size: 3rem;
+  }
+  body main #menu-section #items .menu-items .menu-img {
+    height: 20rem;
+    width: 30rem;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
