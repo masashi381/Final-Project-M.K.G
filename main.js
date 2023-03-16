@@ -10,11 +10,11 @@ contactBtn.addEventListener('click',() => {
         return false;
     }
     if(Email.length === 0){
-        alert('please fill in an email address')
+        alert('Please fill in an email address')
         return false;
     }
     if(Subject.length ===0){
-        alert('please fill in your subject')
+        alert('Please fill in your subject')
         return false;
     }
     if(message.length ===0){

@@ -27,18 +27,20 @@ form{
         margin: 0 auto 2rem;
         .label{
             font-family: 'Noto Serif Lao', serif;
-            font-size: 1.6rem;
+            font-size: 2rem;
             color: #2B2D42;
         }
         .inputs{
             width: 40vw;
             height: 5vh;
+            font-size: 2rem;
             &::placeholder{
                 font-size: 1.4rem;
             }
         }
         .contact-comment{
             width: 40vw;
+            font-size: 2rem;
         }
     }
     
