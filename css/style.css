@@ -247,6 +247,25 @@ footer p {
   box-shadow: 0 0 1rem black;
 }
 
+@media only screen and (max-width: 376px) {
+  #Home {
+    max-width: 375px;
+  }
+  #about {
+    max-width: 375px;
+  }
+  img {
+    max-width: 12rem;
+    max-height: 9rem;
+  }
+  p {
+    margin-top: 4rem;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+}
 body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
