@@ -16,8 +16,8 @@
         <a href="/index.html"> <img src="icons/cropped-Web_LogoR.png" alt="RedBeef"></a>
         <nav>
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="/index.html">Home</a></li>
-                <li class="nav-menu-item"><a href="/index.html">About</a></li>
+                <li class="nav-menu-item"><a href="/index.html#Home">Home</a></li>
+                <li class="nav-menu-item"><a href="/index.html#About">About</a></li>
                 <li class="nav-menu-item"><a href="/menu.html">Menu</a></li>
                 <li class="nav-menu-item"><a href="/location.html">Location</a></li>
                 <li class="nav-menu-item"><a href="/careers.html">Careers</a></li>
@@ -27,25 +27,25 @@
     </header>
     <main>
         <h2 class="contact-title">Contact form</h2>
-        <form action="">
+        <form action="" name="contactName">
             <div class="contact-items">
                 <label class="label" for="name">name</label>
-                <input class="inputs" id="name" type="text" name="yourname" placeholder="Type your name">
+                <input class="inputs" id="name" type="text" name="yourname" placeholder="Type your name" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="email">Email</label>
-                <input class="inputs" id="email" type="email" name="mail" placeholder="Type your email address">
+                <input class="inputs" id="email" type="email" name="yourmail" placeholder="Type your email address" pattern=".+@gmail.com" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="subject">subject</label>
-                <input class="inputs" id="subject" type="text" name="subject">
+                <input class="inputs" id="subject" type="text" name="subject" required>
             </div>
             <div class="contact-items">
                 <label class="label" for="comment">comment</label>
-                <textarea class="contact-comment" name="comment" id="comment" cols="30" rows="10"></textarea>
+                <textarea class="contact-comment" name="comment" id="comment" cols="30" rows="10" required></textarea>
             </div>
             <div class="contact-btn">
-                <button class="submit-btn">Submit</button>
+                <button id="formBtn" class="submit-btn">Submit</button>
             </div>
         </form>
     </main>
@@ -68,5 +68,6 @@
         </address>
         <p>© 2023   |   RedBeef Noodle Kitchen</p>
     </footer>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
