@@ -126,7 +126,7 @@ header nav .nav-menu {
   flex-direction: row;
 }
 header nav li {
-  font-size: 7rem;
+  font-size: 6rem;
   padding: 2rem;
 }
 header nav li:hover {
