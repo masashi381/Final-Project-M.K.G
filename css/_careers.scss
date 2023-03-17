@@ -12,7 +12,7 @@ body{
 }
 .careers-title{
     font-family: 'Bebas Neue', cursive;
-    font-size: 4rem;
+    font-size: 10rem;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -117,10 +117,11 @@ body{
     }
     .navigation-responsive.active{
         display: grid;
+        z-index: 4;
         left: 0;
     }
     .careers-title{
-        font-size: 3.6rem;
+        font-size: 5rem;
     }
     .explanation{
         width: 90vw;
