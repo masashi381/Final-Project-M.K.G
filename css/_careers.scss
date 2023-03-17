@@ -116,6 +116,7 @@ body{
         }
     }
     .navigation-responsive.active{
+        display: grid;
         left: 0;
     }
     .careers-title{
@@ -124,6 +125,12 @@ body{
     .explanation{
         width: 90vw;
         text-align: justify;
+    }
+    #careers-resume{
+        width: 90vw;
+        #resume{
+            width: 100%;
+        }
     }
     .career-btn{
         margin-bottom: 5rem;
