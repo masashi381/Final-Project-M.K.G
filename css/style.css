@@ -357,6 +357,39 @@ body {
 body main {
   padding: 5rem 0;
 }
+body main .navigation-responsive {
+  background-color: #EDF2F4;
+  position: absolute;
+  top: 0;
+  left: -375px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  text-align: center;
+  transition: 0.5s;
+}
+body main .navigation-responsive .nav-menu-responsive {
+  padding-inline: 0;
+}
+body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
+  font-family: "Noto Serif Lao", sans-serif;
+  color: #2B2D42;
+  text-decoration: none;
+  font-size: 3rem;
+}
+body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
+  opacity: 0.5;
+}
+body main .navigation-responsive.active {
+  left: 0;
+}
 body main #menu-section {
   display: flex;
   flex-direction: row;
