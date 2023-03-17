@@ -115,17 +115,14 @@ main{
 
         .nav-menu-responsive {
             padding-inline: 0;
-
             .nav-menu-item-responsive {
                 margin-top: 1.5rem;
                 cursor: pointer;
-
                 a {
                     font-family: "Noto Serif Lao", sans-serif;
                     color: #2B2D42;
                     text-decoration: none;
                     font-size: 3rem;
-
                     &:hover {
                         opacity: .5;
                     }
@@ -136,6 +133,7 @@ main{
 
     .navigation-responsive.active {
         display: grid;
+        z-index: 4;
         left: 0;
     }
 

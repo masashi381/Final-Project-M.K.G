@@ -36,6 +36,7 @@ form{
         .inputs{
             width: 40vw;
             height: 5vh;
+            font-family: 'Noto Serif Lao', serif;
             font-size: 2rem;
             &::placeholder{
                 font-size: 1.4rem;
@@ -43,6 +44,7 @@ form{
         }
         .contact-comment{
             width: 40vw;
+            font-family: 'Noto Serif Lao', serif;
             font-size: 2rem;
         }
     }
@@ -98,6 +100,7 @@ form{
     }
     .navigation-responsive.active{
         display: grid;
+        z-index: 4;
         left: 0;
     }
     .contact-title{
@@ -115,10 +118,12 @@ form{
             .inputs{
                 width: 50vw;
                 height: 3vh;
+                font-size: 1.5rem;
             }
             .contact-comment{
                 width: 50vw;
                 height: 20vh;
+                font-size: 1.5rem;
             }
         }
         .contact-btn{

@@ -111,6 +111,7 @@ body{
             }
             .navigation-responsive.active{
                 display: grid;
+                z-index: 4;
                 left: 0;
             }
             #menu-section{

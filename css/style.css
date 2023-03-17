@@ -143,7 +143,7 @@ header nav a {
   header {
     position: relative;
     height: 90px;
-    z-index: 1;
+    z-index: 5;
   }
   header img {
     width: 16rem;
@@ -334,6 +334,7 @@ main .navigation-responsive {
   }
   .navigation-responsive.active {
     display: grid;
+    z-index: 4;
     left: 0;
   }
   #about {
@@ -454,7 +455,8 @@ body main #menu-section #items .menu-items img {
   }
   body main .navigation-responsive.active {
     display: grid;
-    left: 0
+    z-index: 4;
+    left: 0;
   }
   body main #menu-section #famous-items .famous-menu-items {
     margin: 1.5rem 1.5rem;
@@ -576,6 +578,7 @@ body main #location-section #line hr {
   }
   body .navigation-responsive.active {
     display: grid;
+    z-index: 4;
     left: 0;
   }
   body main {
@@ -617,7 +620,7 @@ body {
 
 .careers-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 4rem;
+  font-size: 10rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -722,10 +725,11 @@ body {
   }
   .navigation-responsive.active {
     display: grid;
+    z-index: 4;
     left: 0;
   }
   .careers-title {
-    font-size: 3.6rem;
+    font-size: 5rem;
   }
   .explanation {
     width: 90vw;
@@ -793,6 +797,7 @@ form .contact-items .label {
 form .contact-items .inputs {
   width: 40vw;
   height: 5vh;
+  font-family: "Noto Serif Lao", serif;
   font-size: 2rem;
 }
 form .contact-items .inputs::-moz-placeholder {
@@ -803,6 +808,7 @@ form .contact-items .inputs::placeholder {
 }
 form .contact-items .contact-comment {
   width: 40vw;
+  font-family: "Noto Serif Lao", serif;
   font-size: 2rem;
 }
 form .contact-btn {
@@ -855,6 +861,7 @@ form .contact-btn .submit-btn:hover {
   }
   .navigation-responsive.active {
     display: grid;
+    z-index: 4;
     left: 0;
   }
   .contact-title {
@@ -874,10 +881,12 @@ form .contact-btn .submit-btn:hover {
   form .contact-items .inputs {
     width: 50vw;
     height: 3vh;
+    font-size: 1.5rem;
   }
   form .contact-items .contact-comment {
     width: 50vw;
     height: 20vh;
+    font-size: 1.5rem;
   }
   form .contact-btn .submit-btn {
     width: 30vw;
