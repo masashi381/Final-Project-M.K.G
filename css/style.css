@@ -229,6 +229,10 @@ footer p {
   align-items: center;
 }
 
+.navigation-responsive {
+  display: none;
+}
+
 .home-title {
   font-family: "Bebas Neue", sans-serif;
   font-size: 10rem;
@@ -297,6 +301,39 @@ footer p {
 @media only screen and (max-width: 376px) {
   #Home {
     max-width: 375px;
+  }
+  .navigation-responsive {
+    background-color: #EDF2F4;
+    position: absolute;
+    top: 0;
+    left: -375px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .navigation-responsive .nav-menu-responsive {
+    padding-inline: 0;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
+    opacity: 0.5;
+  }
+  .navigation-responsive.active {
+    left: 0;
   }
   #about {
     max-width: 375px;
@@ -408,6 +445,9 @@ body {
   font-family: "Noto Serif Lao", sans-serif;
   color: #2B2D42;
 }
+body .navigation-responsive {
+  display: none;
+}
 body main #location-section {
   display: flex;
   flex-direction: column;
@@ -462,6 +502,39 @@ body main #location-section #line hr {
 }
 
 @media only screen and (max-width: 375px) {
+  body .navigation-responsive {
+    background-color: #EDF2F4;
+    position: absolute;
+    top: 0;
+    left: -375px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  body .navigation-responsive .nav-menu-responsive {
+    padding-inline: 0;
+  }
+  body .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  body .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  body .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
+    opacity: 0.5;
+  }
+  body .navigation-responsive.active {
+    left: 0;
+  }
   body main .location {
     flex-wrap: wrap;
   }
@@ -555,7 +628,6 @@ body {
 
 @media only screen and (max-width: 375px) {
   .navigation-responsive {
-    display: block;
     background-color: #EDF2F4;
     position: absolute;
     top: 0;
