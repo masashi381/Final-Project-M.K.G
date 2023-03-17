@@ -451,6 +451,10 @@ body main #menu-section #items .menu-items img {
 }
 
 @media only screen and (max-width: 375px) {
+  body main #menu-section #famous-items .famous-menu-items {
+    margin: 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
+  }
   body main #menu-section #famous-items .famous-menu-items h3 {
     font-size: 4rem;
   }
@@ -460,6 +464,10 @@ body main #menu-section #items .menu-items img {
   body main #menu-section #famous-items .famous-menu-items .famous-menu-img {
     height: 20rem;
     width: 30rem;
+  }
+  body main #menu-section #items .menu-items {
+    margin: 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
   body main #menu-section #items .menu-items h3 {
     font-size: 4rem;
