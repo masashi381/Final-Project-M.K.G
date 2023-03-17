@@ -8,10 +8,10 @@ body{
     background-color: #EDF2F4;
     font-family: "Noto Serif Lao", sans-serif;
     color: #2B2D42;
-    .navigation-responsive{
-        display: none;
-    }
     main{
+        .navigation-responsive{
+            display: none;
+        }
         #location-section{
             display: flex;
             flex-direction: column;
@@ -101,6 +101,7 @@ body{
             }
         }
         .navigation-responsive.active{
+            display: grid;
             left: 0;
         }
         main{

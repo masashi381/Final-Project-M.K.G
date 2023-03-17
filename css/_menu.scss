@@ -11,37 +11,7 @@ body{
     main{
         padding: 5rem 0;
         .navigation-responsive{
-            background-color: #EDF2F4;
-            position: absolute;
-            top: 0;
-            left: -375px;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            color: white;
-            text-align: center;
-            transition: .5s;
-            .nav-menu-responsive{
-                padding-inline: 0;
-                .nav-menu-item-responsive{
-                    margin-top: 1.5rem;
-                    cursor: pointer;
-                    a{
-                        font-family: "Noto Serif Lao", sans-serif;
-                        color: #2B2D42; 
-                        text-decoration: none;
-                        font-size: 3rem;
-                        &:hover{
-                            opacity: .5;
-                        }
-                    }
-                }
-            }
-        }
-        .navigation-responsive.active{
-            left: 0;
+            display: none;
         }
         #menu-section{
             display: flex;
@@ -109,6 +79,40 @@ body{
 @media only screen and (max-width: 375px){
     body{
         main{
+            .navigation-responsive{
+                background-color: #EDF2F4;
+                position: absolute;
+                top: 0;
+                left: -375px;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                color: white;
+                text-align: center;
+                transition: .5s;
+                .nav-menu-responsive{
+                    padding-inline: 0;
+                    .nav-menu-item-responsive{
+                        margin-top: 1.5rem;
+                        cursor: pointer;
+                        a{
+                            font-family: "Noto Serif Lao", sans-serif;
+                            color: #2B2D42; 
+                            text-decoration: none;
+                            font-size: 3rem;
+                            &:hover{
+                                opacity: .5;
+                            }
+                        }
+                    }
+                }
+            }
+            .navigation-responsive.active{
+                display: grid;
+                left: 0;
+            }
             #menu-section{
                 #famous-items{
                     .famous-menu-items{
