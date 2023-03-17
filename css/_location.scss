@@ -19,10 +19,7 @@ body{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                padding-top: 5rem;
-                padding-bottom: 5rem;
-                padding-left: 10rem;
-                padding-right: 10rem;
+                padding: 5rem 10rem;
                 .address{
                     display: flex;
                     flex-direction: column;
@@ -104,10 +101,30 @@ body{
             left: 0;
         }
         main{
-            .location{
-                flex-wrap: wrap;
-                p{
-                    padding-bottom: 5rem;
+            padding: 5rem 0;
+            #location-section{
+                .location{
+                    flex-wrap: wrap;
+                    padding: 5rem 1rem;
+                    .google-map {
+                        position: relative;
+                        padding-bottom: 75%;
+                        height: 0;
+                        overflow: hidden;
+                        iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .address{
+                        padding: 0;
+                    }
+                    p{
+                        padding-bottom: 5rem;
+                    }
                 }
             }
         }
