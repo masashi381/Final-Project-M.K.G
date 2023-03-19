@@ -248,7 +248,7 @@ footer p {
 
 .Menu-button {
   color: white;
-  background-color: black;
+  background-color: #D90429;
   border-radius: 10px;
   min-height: 6rem;
   width: 20rem;
@@ -286,22 +286,20 @@ footer p {
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
 }
-.about-divs .about-p {
+.about-divs .about-img:hover {
+  box-shadow: 0 0 1rem black;
+}
+
+.about-p {
   margin-top: 3rem;
   text-align: left;
   font-size: 2rem;
   font-weight: 700;
   width: 32rem;
-  margin-left: 8rem;
-}
-.about-divs .about-img:hover {
-  box-shadow: 0 0 1rem black;
+  margin-left: 5rem;
 }
 
-@media only screen and (max-width: 376px) {
-  #Home {
-    max-width: 375px;
-  }
+@media screen and (max-width: 376px) {
   .navigation-responsive {
     background-color: #EDF2F4;
     position: absolute;
@@ -332,20 +330,45 @@ footer p {
   .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
     opacity: 0.5;
   }
+  #Home {
+    max-width: 375px;
+  }
+  .home-title {
+    font-size: 7rem;
+    text-align: center;
+  }
   .navigation-responsive.active {
     left: 0;
   }
   #about {
     max-width: 375px;
   }
+  .about-divs {
+    width: 70%;
+  }
   .about-img {
-    max-width: 12rem;
-    max-height: 9rem;
+    max-width: 21rem;
+    max-height: 17rem;
   }
   .about-p {
     margin-top: 4rem;
     text-align: left;
     font-weight: 700;
+    margin-left: 0;
+    max-width: 28rem;
+  }
+  .Menu-button {
+    background-color: #D90429;
+  }
+}
+@media screen and (min-width: 1470px) {
+  .about-p {
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 32rem;
+    margin-left: 8rem;
   }
 }
 body {
