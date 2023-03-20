@@ -3,10 +3,11 @@
 
 // write code below this line
 // for Gerardo
-*{
+* {
     scroll-behavior: smooth;
 }
-#Home{
+
+#Home {
     min-height: 100vh;
     background: url(../images/Premium\ Red\ Beef\ Noodle\ Soup.jpeg);
     background-size: cover;
@@ -14,24 +15,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-.navigation-responsive{
-    display: none;
+main{
+    .navigation-responsive {
+        display: none;
+    }
 }
-.home-title{
+
+.home-title {
     font-family: "Bebas Neue", sans-serif;
     font-size: 10rem;
     text-shadow: 0 0 1px white;
     color: black;
 
 }
-.Menu-button{
+
+.Menu-button {
     font-family: "Noto Serif Lao", sans-serif;
     text-decoration: none;
     font-size: 1.5rem;
 }
-.Menu-button{
+
+.Menu-button {
     color: white;
     background-color: #D90429;
     border-radius: 10px;
@@ -41,15 +46,17 @@
     padding: 1rem;
     margin-top: 1rem;
     animation-duration: 3s;
-    
-    
+
+
 }
-.Menu-button:hover{
+
+.Menu-button:hover {
     box-shadow: 0 0 10px white;
     animation-duration: 3s;
     transition-duration: 1s;
 }
-#About{
+
+#About {
     padding-bottom: 7rem;
     padding-top: 5rem;
     display: flex;
@@ -57,15 +64,18 @@
     flex-wrap: wrap;
 }
 
-.about-divs{
+.about-divs {
     text-align: center;
     width: 33%;
     padding-top: 6rem;
-    .about-img{
+
+    .about-img {
         width: 32rem;
         height: 24rem;
         margin-top: 6rem;
-    } h2{
+    }
+
+    h2 {
         font-family: "Bebas Neue", sans-serif;
         font-size: 4rem;
         }.about-img:hover{
@@ -81,9 +91,30 @@
     width: 32rem;
     margin-left: 5rem;
 } 
-
 @media screen and (max-width: 376px){
     .navigation-responsive{
+    }
+
+    .about-p {
+        margin-top: 3rem;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        width: 32rem;
+        margin-left: 8rem;
+    }
+
+    .about-img:hover {
+        box-shadow: 0 0 1rem black;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #Home {
+        max-width: 375px;
+    }
+
+    .navigation-responsive {
         background-color: #EDF2F4;
         position: absolute;
         top: 0;
@@ -96,17 +127,25 @@
         color: white;
         text-align: center;
         transition: .5s;
-        .nav-menu-responsive{
+
+        .nav-menu-responsive {
             padding-inline: 0;
+
             .nav-menu-item-responsive{
                 margin-top: 1.5rem;
                 cursor: pointer;
                 a{
+
+            .nav-menu-item-responsive {
+                margin-top: 1.5rem;
+                cursor: pointer;
+                a {
+
                     font-family: "Noto Serif Lao", sans-serif;
-                    color: #2B2D42; 
+                    color: #2B2D42;
                     text-decoration: none;
                     font-size: 3rem;
-                    &:hover{
+                    &:hover {
                         opacity: .5;
                     }
                 }
@@ -152,4 +191,29 @@
         width: 32rem;
         margin-left: 8rem;
     } 
+=======
+
+    .navigation-responsive.active {
+        display: grid;
+        z-index: 4;
+        left: 0;
+    }
+
+    #about {
+        max-width: 375px;
+    }
+
+    .about-img {
+        max-width: 12rem;
+        max-height: 9rem;
+    }
+
+    .about-p {
+        margin-top: 4rem;
+        text-align: left;
+        font-weight: 700;
+
+    }
+
+
 }

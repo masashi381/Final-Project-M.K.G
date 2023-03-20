@@ -143,11 +143,11 @@ header nav a {
   header {
     position: relative;
     height: 90px;
-    z-index: 1;
+    z-index: 5;
   }
   header img {
-    width: 10rem;
-    height: 5rem;
+    width: 16rem;
+    height: 8rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -229,7 +229,7 @@ footer p {
   align-items: center;
 }
 
-.navigation-responsive {
+main .navigation-responsive {
   display: none;
 }
 
@@ -338,6 +338,8 @@ footer p {
     text-align: center;
   }
   .navigation-responsive.active {
+    display: grid;
+    z-index: 4;
     left: 0;
   }
   #about {
@@ -380,37 +382,7 @@ body main {
   padding: 5rem 0;
 }
 body main .navigation-responsive {
-  background-color: #EDF2F4;
-  position: absolute;
-  top: 0;
-  left: -375px;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  color: white;
-  text-align: center;
-  transition: 0.5s;
-}
-body main .navigation-responsive .nav-menu-responsive {
-  padding-inline: 0;
-}
-body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
-  margin-top: 1.5rem;
-  cursor: pointer;
-}
-body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
-  font-family: "Noto Serif Lao", sans-serif;
-  color: #2B2D42;
-  text-decoration: none;
-  font-size: 3rem;
-}
-body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
-  opacity: 0.5;
-}
-body main .navigation-responsive.active {
-  left: 0;
+  display: none;
 }
 body main #menu-section {
   display: flex;
@@ -474,6 +446,45 @@ body main #menu-section #items .menu-items img {
 }
 
 @media only screen and (max-width: 375px) {
+  body main .navigation-responsive {
+    background-color: #EDF2F4;
+    position: absolute;
+    top: 0;
+    left: -375px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  body main .navigation-responsive .nav-menu-responsive {
+    padding-inline: 0;
+  }
+  body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  body main .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
+    opacity: 0.5;
+  }
+  body main .navigation-responsive.active {
+    display: grid;
+    z-index: 4;
+    left: 0;
+  }
+  body main #menu-section #famous-items .famous-menu-items {
+    margin: 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
+  }
   body main #menu-section #famous-items .famous-menu-items h3 {
     font-size: 4rem;
   }
@@ -483,6 +494,10 @@ body main #menu-section #items .menu-items img {
   body main #menu-section #famous-items .famous-menu-items .famous-menu-img {
     height: 20rem;
     width: 30rem;
+  }
+  body main #menu-section #items .menu-items {
+    margin: 1.5rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
   body main #menu-section #items .menu-items h3 {
     font-size: 4rem;
@@ -500,7 +515,7 @@ body {
   font-family: "Noto Serif Lao", sans-serif;
   color: #2B2D42;
 }
-body .navigation-responsive {
+body main .navigation-responsive {
   display: none;
 }
 body main #location-section {
@@ -511,10 +526,7 @@ body main #location-section .location {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding: 5rem 10rem;
 }
 body main #location-section .location .address {
   display: flex;
@@ -588,12 +600,34 @@ body main #location-section #line hr {
     opacity: 0.5;
   }
   body .navigation-responsive.active {
+    display: grid;
+    z-index: 4;
     left: 0;
   }
-  body main .location {
-    flex-wrap: wrap;
+  body main {
+    padding: 5rem 0;
   }
-  body main .location p {
+  body main #location-section .location {
+    flex-wrap: wrap;
+    padding: 5rem 1rem;
+  }
+  body main #location-section .location .google-map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  body main #location-section .location .google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body main #location-section .location .address {
+    padding: 0;
+  }
+  body main #location-section .location p {
     padding-bottom: 5rem;
   }
 }
@@ -609,7 +643,7 @@ body {
 
 .careers-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 4rem;
+  font-size: 10rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -713,14 +747,22 @@ body {
     opacity: 0.5;
   }
   .navigation-responsive.active {
+    display: grid;
+    z-index: 4;
     left: 0;
   }
   .careers-title {
-    font-size: 3.6rem;
+    font-size: 5rem;
   }
   .explanation {
     width: 90vw;
     text-align: justify;
+  }
+  #careers-resume {
+    width: 90vw;
+  }
+  #careers-resume #resume {
+    width: 100%;
   }
   .career-btn {
     margin-bottom: 5rem;
@@ -744,6 +786,10 @@ body {
   background-color: #EDF2F4;
   font-family: "Noto Serif Lao", sans-serif;
   color: #2B2D42;
+}
+
+.navigation-responsive {
+  display: none;
 }
 
 .contact-title {
@@ -774,6 +820,7 @@ form .contact-items .label {
 form .contact-items .inputs {
   width: 40vw;
   height: 5vh;
+  font-family: "Noto Serif Lao", serif;
   font-size: 2rem;
 }
 form .contact-items .inputs::-moz-placeholder {
@@ -784,6 +831,7 @@ form .contact-items .inputs::placeholder {
 }
 form .contact-items .contact-comment {
   width: 40vw;
+  font-family: "Noto Serif Lao", serif;
   font-size: 2rem;
 }
 form .contact-btn {
@@ -804,6 +852,41 @@ form .contact-btn .submit-btn:hover {
 }
 
 @media only screen and (max-width: 375px) {
+  .navigation-responsive {
+    background-color: #EDF2F4;
+    position: absolute;
+    top: 0;
+    left: -375px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .navigation-responsive .nav-menu-responsive {
+    padding-inline: 0;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a {
+    font-family: "Noto Serif Lao", sans-serif;
+    color: #2B2D42;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  .navigation-responsive .nav-menu-responsive .nav-menu-item-responsive a:hover {
+    opacity: 0.5;
+  }
+  .navigation-responsive.active {
+    display: grid;
+    z-index: 4;
+    left: 0;
+  }
   .contact-title {
     font-size: 4rem;
     margin-top: 3rem;
@@ -820,9 +903,13 @@ form .contact-btn .submit-btn:hover {
   }
   form .contact-items .inputs {
     width: 50vw;
+    height: 3vh;
+    font-size: 1.5rem;
   }
   form .contact-items .contact-comment {
     width: 50vw;
+    height: 20vh;
+    font-size: 1.5rem;
   }
   form .contact-btn .submit-btn {
     width: 30vw;

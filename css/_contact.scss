@@ -7,6 +7,9 @@ body{
     font-family: "Noto Serif Lao", sans-serif;
     color: #2B2D42; 
 }
+.navigation-responsive{
+    display: none;
+}
 .contact-title{
     font-family: 'Bebas Neue', cursive;
     font-size: 6rem;
@@ -33,6 +36,7 @@ form{
         .inputs{
             width: 40vw;
             height: 5vh;
+            font-family: 'Noto Serif Lao', serif;
             font-size: 2rem;
             &::placeholder{
                 font-size: 1.4rem;
@@ -40,6 +44,7 @@ form{
         }
         .contact-comment{
             width: 40vw;
+            font-family: 'Noto Serif Lao', serif;
             font-size: 2rem;
         }
     }
@@ -63,6 +68,41 @@ form{
 }
 
 @media only screen and (max-width: 375px){
+    .navigation-responsive{
+        background-color: #EDF2F4;
+        position: absolute;
+        top: 0;
+        left: -375px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        text-align: center;
+        transition: .5s;
+        .nav-menu-responsive{
+            padding-inline: 0;
+            .nav-menu-item-responsive{
+	            margin-top: 1.5rem;
+	            cursor: pointer;
+                a{
+                    font-family: "Noto Serif Lao", sans-serif;
+                    color: #2B2D42; 
+                    text-decoration: none;
+                    font-size: 3rem;
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+    .navigation-responsive.active{
+        display: grid;
+        z-index: 4;
+        left: 0;
+    }
     .contact-title{
         font-size: 4rem;
         margin-top: 3rem;
@@ -77,9 +117,13 @@ form{
             }
             .inputs{
                 width: 50vw;
+                height: 3vh;
+                font-size: 1.5rem;
             }
             .contact-comment{
                 width: 50vw;
+                height: 20vh;
+                font-size: 1.5rem;
             }
         }
         .contact-btn{
