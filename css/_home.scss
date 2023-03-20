@@ -38,7 +38,7 @@ main{
 
 .Menu-button {
     color: white;
-    background-color: black;
+    background-color: #D90429;
     border-radius: 10px;
     min-height: 6rem;
     width: 20rem;
@@ -78,6 +78,21 @@ main{
     h2 {
         font-family: "Bebas Neue", sans-serif;
         font-size: 4rem;
+        }.about-img:hover{
+            box-shadow:0 0 1rem black;
+        }
+}
+
+.about-p{
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 32rem;
+    margin-left: 5rem;
+} 
+@media screen and (max-width: 376px){
+    .navigation-responsive{
     }
 
     .about-p {
@@ -115,10 +130,17 @@ main{
 
         .nav-menu-responsive {
             padding-inline: 0;
+
+            .nav-menu-item-responsive{
+                margin-top: 1.5rem;
+                cursor: pointer;
+                a{
+
             .nav-menu-item-responsive {
                 margin-top: 1.5rem;
                 cursor: pointer;
                 a {
+
                     font-family: "Noto Serif Lao", sans-serif;
                     color: #2B2D42;
                     text-decoration: none;
@@ -130,6 +152,46 @@ main{
             }
         }
     }
+    #Home{
+        max-width: 375px;
+    }.home-title{
+        font-size: 7rem;
+        text-align: center;
+    }
+.navigation-responsive.active{
+    left: 0;
+}
+    #about{
+        max-width: 375px;
+        
+    }.about-divs{
+        width: 70%;
+
+        }.about-img{
+        max-width: 21rem;
+        max-height: 17rem;
+        }.about-p{
+            margin-top: 4rem;
+            text-align: left;
+            font-weight: 700;
+            margin-left: 0;
+            max-width: 28rem;
+        } 
+.Menu-button{
+    background-color: #D90429;    
+}
+}
+
+@media screen and (min-width: 1470px){
+    .about-p{
+        margin-top: 3rem;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        width: 32rem;
+        margin-left: 8rem;
+    } 
+=======
 
     .navigation-responsive.active {
         display: grid;
@@ -152,5 +214,6 @@ main{
         font-weight: 700;
 
     }
+
 
 }
