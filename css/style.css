@@ -299,7 +299,10 @@ main .navigation-responsive {
   margin-left: 5rem;
 }
 
-@media screen and (max-width: 376px) {
+@media only screen and (max-width: 376px) {
+  #Home {
+    max-width: 375px;
+  }
   .navigation-responsive {
     background-color: #EDF2F4;
     position: absolute;
@@ -338,8 +341,6 @@ main .navigation-responsive {
     text-align: center;
   }
   .navigation-responsive.active {
-    display: grid;
-    z-index: 4;
     left: 0;
   }
   #about {
@@ -371,6 +372,23 @@ main .navigation-responsive {
     font-weight: 700;
     width: 32rem;
     margin-left: 8rem;
+  }
+  .navigation-responsive.active {
+    display: grid;
+    z-index: 4;
+    left: 0;
+  }
+  #about {
+    max-width: 375px;
+  }
+  .about-img {
+    max-width: 12rem;
+    max-height: 9rem;
+  }
+  .about-p {
+    margin-top: 4rem;
+    text-align: left;
+    font-weight: 700;
   }
 }
 body {
