@@ -78,9 +78,10 @@ main{
     h2 {
         font-family: "Bebas Neue", sans-serif;
         font-size: 4rem;
-        }.about-img:hover{
-            box-shadow:0 0 1rem black;
-        }
+    }
+    .about-img:hover{
+        box-shadow:0 0 1rem black;
+    }
 }
 
 .about-p{
@@ -91,30 +92,13 @@ main{
     width: 32rem;
     margin-left: 5rem;
 } 
-@media screen and (max-width: 376px){
-    .navigation-responsive{
-    }
-
-    .about-p {
-        margin-top: 3rem;
-        text-align: left;
-        font-size: 2rem;
-        font-weight: 700;
-        width: 32rem;
-        margin-left: 8rem;
-    }
-
-    .about-img:hover {
-        box-shadow: 0 0 1rem black;
-    }
-}
 
 @media only screen and (max-width: 376px) {
     #Home {
         max-width: 375px;
     }
 
-    .navigation-responsive {
+    .navigation-responsive{
         background-color: #EDF2F4;
         position: absolute;
         top: 0;
@@ -127,20 +111,12 @@ main{
         color: white;
         text-align: center;
         transition: .5s;
-
         .nav-menu-responsive {
             padding-inline: 0;
-
-            .nav-menu-item-responsive{
-                margin-top: 1.5rem;
-                cursor: pointer;
-                a{
-
             .nav-menu-item-responsive {
                 margin-top: 1.5rem;
                 cursor: pointer;
                 a {
-
                     font-family: "Noto Serif Lao", sans-serif;
                     color: #2B2D42;
                     text-decoration: none;
@@ -158,9 +134,9 @@ main{
         font-size: 7rem;
         text-align: center;
     }
-.navigation-responsive.active{
-    left: 0;
-}
+    .navigation-responsive.active{
+        left: 0;
+    }
     #about{
         max-width: 375px;
         
@@ -177,9 +153,9 @@ main{
             margin-left: 0;
             max-width: 28rem;
         } 
-.Menu-button{
-    background-color: #D90429;    
-}
+    .Menu-button{
+        background-color: #D90429;    
+    }
 }
 
 @media screen and (min-width: 1470px){
@@ -191,7 +167,6 @@ main{
         width: 32rem;
         margin-left: 8rem;
     } 
-=======
 
     .navigation-responsive.active {
         display: grid;
@@ -214,6 +189,4 @@ main{
         font-weight: 700;
 
     }
-
-
 }
